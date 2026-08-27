@@ -7,14 +7,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $categoria = $_POST['categoria'];
     $telefone = $_POST['telefone'];
     $endereco = $_POST['endereco'];
-}
-
-$sql = "INSERT INTO restaurante (nome, categoria, telefone, endereco) VALUES ('$nome', '$categoria', '$telefone', '$endereco')";
-if($conn->query($sql) === true) {
-    echo "Restaurante cadastrado com sucesso!";
-}else {
-    echo "Erro: " . $sql . "<br>" . $conn->error;
-}
+    
+    $sql = "INSERT INTO restaurante (nome, categoria, telefone, endereco) VALUES ('$nome', '$categoria', '$telefone', '$endereco')";
+    if($conn->query($sql) === true) {
+        echo "Restaurante cadastrado com sucesso!";
+        }else {
+            echo "Erro: " . $sql . "<br>" . $conn->error;
+            }
+            }
 
 ?>
 
@@ -26,7 +26,7 @@ if($conn->query($sql) === true) {
     <title>Cadastro Restaurantes</title>
 </head>
 <body>
-     
+     <h1>Cadastrar Restaurante</h1>
 <form method="POST">
 
 <label for="nome">Nome:</label>
@@ -43,7 +43,7 @@ if($conn->query($sql) === true) {
 <br></br>
 <button type="submit">Cadastrar</button>
 </form>
-<button type="button" onclick="window.location.href='index.php'">Voltar</button>
+<button type="button" onclick="window.location.href='../../index.php'">Voltar</button>
 
 </body>
 </html>
