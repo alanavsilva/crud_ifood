@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$password = "root";
+$password = "";
 $database = "crud_ifood";
 
 $conn = new mysqli($host, $user, $password, $database);

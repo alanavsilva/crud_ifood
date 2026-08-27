@@ -9,9 +9,9 @@
     
 <h1>Sistema de ifood</h1>
 
-<button type="button" onclick="window.location.href='cad_cliente.php'">Cadastrar Cliente</button>
-<button type="button" onclick="window.location.href='cad_restaurante.php'">Cadastrar Restaurante</button>
-<button type="button" onclick="window.location.href='cad_pedido.php'">Cadastrar Pedido</button>
+<button type="button" onclick="window.location.href='public/cliente/cad_cliente.php'">Cadastrar Cliente</button>
+<button type="button" onclick="window.location.href='public/restaurante/cad_restaurante.php'">Cadastrar Restaurante</button>
+<button type="button" onclick="window.location.href='public/pedido/cad_pedido.php'">Cadastrar Pedido</button>
 
 </body>
 </html>
