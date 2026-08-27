@@ -27,4 +27,4 @@ create table pedido (
 
     foreign key (id_cliente) references cliente(id),
     foreign key (id_restaurante) references restaurante(id)
-)
+);
