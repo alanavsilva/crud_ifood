@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "crud_ifood";
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'crud_ifood';
 
 $conn = new mysqli($host, $user, $password, $database);
 
